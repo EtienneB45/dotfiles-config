@@ -15,8 +15,6 @@ nnoremap <silent> <leader>j :TmuxNavigateDown<cr>
 au BufRead,BufNewFile *.py nnoremap <C-x> :!python3 %<CR>
 au BufRead,BufNewFile *.sh nnoremap <C-x> :!./%<CR>
 
-map <leader>gd  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
 " normal mode remap keys
 " Press F4 to toggle highlighting on/off, and show current value."
 noremap <F4> :set hlsearch! hlsearch?<CR> 
@@ -26,7 +24,7 @@ nnoremap <leader>s :w<Enter>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>sq :wq<CR>
 nmap <leader>, <Plug>NERDCommenterToggle
-nnoremap <leader>sv :so ~/.vim/vimrc<CR>
+nnoremap <leader>sv :so ~/.config/nvim/init.vim<CR>
 " search and replace
 nnoremap <leader>f% :%s/\<<C-r><C-w>\>//g<left><left>
 nnoremap <leader>fg :.s/\<<C-r><C-w>\>//g<left><left>
@@ -135,8 +133,8 @@ nnoremap ? W
 nnoremap § ?
 
 "remap for commandline
-nnoremap <leader>PI :PluginInstall<cr>
-nnoremap <leader>PC :PluginClean<cr>
+nnoremap <leader>PI :PlugInstall<cr>
+nnoremap <leader>PC :PlugClean<cr>
 nnoremap <C-e> :edit<cr>
 
 "remap for terminal command
@@ -152,10 +150,10 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " SuperTab like snippets behavior.
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-"imap <expr><TAB>
-" \ pumvisible() ? "\<C-n>" :
-" \ neosnippet#expandable_or_jumpable() ?
-" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+imap <expr><TAB>
+ \ pumvisible() ? "\<C-n>" :
+ \ neosnippet#expandable_or_jumpable() ?
+ \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 

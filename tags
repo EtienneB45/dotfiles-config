@@ -76,7 +76,6 @@
 <leader>fg	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>fg :.s\/\\<<C-r><C-w>\\>\/\/g<left><left>$/;"	m	language:Vim
 <leader>fG	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <leader>fG :.,$s\/\\<<C-r><C-w>\\>\/\/g<left><left>$/;"	m	language:Vim
 <leader>fg	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <leader>fg :.s\/\\<<C-r><C-w>\\>\/\/g<left><left>$/;"	m	language:Vim
-<leader>gd	/home/ebrame/.config/nvim/mapkeys.vim	/^map <leader>gd  :YcmCompleter GoToDefinitionElseDeclaration<CR>$/;"	m	language:Vim
 <leader>gd	/home/ebrame/.vim/mapkeys.vim	/^map <leader>gd  :YcmCompleter GoToDefinitionElseDeclaration<CR>$/;"	m	language:Vim
 <leader>h	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <silent> <leader>h :TmuxNavigateLeft<cr>$/;"	m	language:Vim
 <leader>h	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <silent> <leader>h :TmuxNavigateLeft<cr>$/;"	m	language:Vim
@@ -88,9 +87,9 @@
 <leader>l	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <silent> <leader>l :TmuxNavigateRight<cr>$/;"	m	language:Vim
 <leader>p	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>p diw"xP$/;"	m	language:Vim
 <leader>p	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <leader>p diw"xP$/;"	m	language:Vim
-<leader>PC	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>PC :PluginClean<cr>$/;"	m	language:Vim
+<leader>PC	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>PC :PlugClean<cr>$/;"	m	language:Vim
 <leader>PC	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <leader>PC :PluginClean<cr>$/;"	m	language:Vim
-<leader>PI	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>PI :PluginInstall<cr>$/;"	m	language:Vim
+<leader>PI	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>PI :PlugInstall<cr>$/;"	m	language:Vim
 <leader>PI	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <leader>PI :PluginInstall<cr>$/;"	m	language:Vim
 <leader>q	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>q :q<CR>$/;"	m	language:Vim
 <leader>q	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <leader>q :q<CR>$/;"	m	language:Vim
@@ -100,7 +99,7 @@
 <leader>scp	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <leader>scp :!scp ~\/.vim\/*.vim ~\/.vim\/vimrc :.vim<C-left>$/;"	m	language:Vim
 <leader>sq	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>sq :wq<CR>$/;"	m	language:Vim
 <leader>sq	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <leader>sq :wq<CR>$/;"	m	language:Vim
-<leader>sv	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>sv :so ~\/.vim\/vimrc<CR>$/;"	m	language:Vim
+<leader>sv	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>sv :so ~\/.config\/nvim\/init.vim<CR>$/;"	m	language:Vim
 <leader>sv	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <leader>sv :so ~\/.vim\/vimrc<CR>$/;"	m	language:Vim
 <leader>t	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>t viw$/;"	m	language:Vim
 <leader>T	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <leader>T viW$/;"	m	language:Vim
@@ -134,6 +133,7 @@
 <S-tab>	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <S-tab> gT$/;"	m	language:Vim
 <Space><CR>	/home/ebrame/.config/nvim/mapkeys.vim	/^inoremap <Space><CR> <ESC>o$/;"	m	language:Vim
 <Space><CR>	/home/ebrame/.vim/mapkeys.vim	/^inoremap <Space><CR> <ESC>o$/;"	m	language:Vim
+<TAB>	/home/ebrame/.config/nvim/mapkeys.vim	/^imap <expr><TAB>$/;"	m	language:Vim
 <tab>	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <tab> gt$/;"	m	language:Vim
 <tab>	/home/ebrame/.vim/mapkeys.vim	/^nnoremap <tab> gt$/;"	m	language:Vim
 <Up>	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap <Up> <C-w>k$/;"	m	language:Vim
@@ -166,30 +166,25 @@ g:airline_section_y	/home/ebrame/.vim/init.vim	/^let g:airline_section_y = 'BN: 
 g:airline_theme	/home/ebrame/.config/nvim/settings.vim	/^let g:airline_theme = 'ayu'$/;"	v	language:Vim
 g:airline_theme	/home/ebrame/.vim/init.vim	/^let g:airline_theme='simple'$/;"	v	language:Vim
 g:deoplete#enable_at_startup	/home/ebrame/.config/nvim/settings.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v	language:Vim
-g:easytags_async	/home/ebrame/.config/nvim/settings.vim	/^let g:easytags_async = 1$/;"	v	language:Vim
 g:easytags_async	/home/ebrame/.vim/init.vim	/^let g:easytags_async = 1$/;"	v	language:Vim
-g:easytags_dynamic_files	/home/ebrame/.config/nvim/settings.vim	/^let g:easytags_dynamic_files = 2$/;"	v	language:Vim
 g:easytags_dynamic_files	/home/ebrame/.vim/init.vim	/^let g:easytags_dynamic_files = 2$/;"	v	language:Vim
-g:easytags_events	/home/ebrame/.config/nvim/settings.vim	/^let g:easytags_events = ['BufReadPost', 'BufWritePost']$/;"	v	language:Vim
 g:easytags_events	/home/ebrame/.vim/init.vim	/^let g:easytags_events = ['BufReadPost', 'BufWritePost']$/;"	v	language:Vim
-g:easytags_resolve_links	/home/ebrame/.config/nvim/settings.vim	/^let g:easytags_resolve_links = 1$/;"	v	language:Vim
 g:easytags_resolve_links	/home/ebrame/.vim/init.vim	/^let g:easytags_resolve_links = 1$/;"	v	language:Vim
-g:easytags_suppress_ctags_warning	/home/ebrame/.config/nvim/settings.vim	/^let g:easytags_suppress_ctags_warning = 1$/;"	v	language:Vim
 g:easytags_suppress_ctags_warning	/home/ebrame/.vim/init.vim	/^let g:easytags_suppress_ctags_warning = 1$/;"	v	language:Vim
 g:jedi#autocompletion_enabled	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#autocompletion_enabled = 0$/;"	v	language:Vim
 g:jedi#documentation_command	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#documentation_command = "K"$/;"	v	language:Vim
 g:jedi#goto_assignments_command	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#goto_assignments_command = "<leader>a"$/;"	v	language:Vim
-g:jedi#goto_command	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#goto_command = "<leader>d"$/;"	v	language:Vim
-g:jedi#goto_definitions_command	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#goto_definitions_command = "<leader>g"$/;"	v	language:Vim
+g:jedi#goto_command	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#goto_command = "<leader>g"$/;"	v	language:Vim
+g:jedi#goto_definitions_command	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#goto_definitions_command = "<leader>d"$/;"	v	language:Vim
+g:jedi#popup_on_dot	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#popup_on_dot = 0$/;"	v	language:Vim
 g:jedi#rename_command	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#rename_command = "<leader>r"$/;"	v	language:Vim
 g:jedi#usages_command	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#usages_command = "<leader>n"$/;"	v	language:Vim
+g:jedi#use_tabs_not_buffers	/home/ebrame/.config/nvim/settings.vim	/^let g:jedi#use_tabs_not_buffers = 1$/;"	v	language:Vim
 g:python_highlight_all	/home/ebrame/.config/nvim/settings.vim	/^let g:python_highlight_all=1$/;"	v	language:Vim
 g:python_highlight_all	/home/ebrame/.vim/init.vim	/^let g:python_highlight_all=1$/;"	v	language:Vim
 g:tmux_navigator_no_mappings	/home/ebrame/.config/nvim/mapkeys.vim	/^let g:tmux_navigator_no_mappings = 1$/;"	v	language:Vim
 g:tmux_navigator_no_mappings	/home/ebrame/.vim/mapkeys.vim	/^let g:tmux_navigator_no_mappings = 1$/;"	v	language:Vim
-g:ycm_autoclose_preview_window_after_completion	/home/ebrame/.config/nvim/settings.vim	/^let g:ycm_autoclose_preview_window_after_completion=1$/;"	v	language:Vim
 g:ycm_autoclose_preview_window_after_completion	/home/ebrame/.vim/init.vim	/^let g:ycm_autoclose_preview_window_after_completion=1$/;"	v	language:Vim
-g:ycm_server_python_interpreter	/home/ebrame/.config/nvim/settings.vim	/^let g:ycm_server_python_interpreter='\/usr\/bin\/python2'$/;"	v	language:Vim
 jk	/home/ebrame/.config/nvim/mapkeys.vim	/^inoremap jk <Esc>$/;"	m	language:Vim
 jk	/home/ebrame/.vim/mapkeys.vim	/^inoremap jk <Esc>$/;"	m	language:Vim
 M	/home/ebrame/.config/nvim/mapkeys.vim	/^nnoremap M @$/;"	m	language:Vim

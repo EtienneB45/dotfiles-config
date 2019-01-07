@@ -26,8 +26,8 @@ Plug 'terryma/vim-multiple-cursors' " plugin to add the multiple cursor function
 Plug 'tmhedberg/SimpylFold' " plugin for well-folding
 Plug 'vim-scripts/indentpython.vim' " plugin for well-indentation
 
-Plug 'ncm2/ncm2' " plugin for auto-completion in python
-Plug 'roxma/nvim-yarp' " (yet another remote plugin) replace UpdateRemotePlugin (useful for ncm2)
+"Plug 'ncm2/ncm2' " plugin for auto-completion in python
+"Plug 'roxma/nvim-yarp' " (yet another remote plugin) replace UpdateRemotePlugin (useful for ncm2)
 
 " Pluggin for snippets construction (use C-k)
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'}
